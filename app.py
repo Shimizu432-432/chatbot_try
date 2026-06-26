@@ -4,7 +4,7 @@ import os
 import time
 
 # --- 初期設定 ---
-genai.configure("GEMINI_API_KEY")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # 事前に読み込ませるPDFのファイル名をリスト（配列）で指定します
 PRE_INPUT_PDFS = ["wasedasaiall.pdf", "wasedasaiinsyoku.pdf"]
